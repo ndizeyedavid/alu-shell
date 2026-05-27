@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%o\n" $((10#$(echo "obase=10; ibase=5; $WATER" | bc) + $(echo "obase=10; ibase=6; $STIR" | bc)))
+echo $((10#$WATER + 10#$STIR))
