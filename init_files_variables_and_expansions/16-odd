@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p "Enter a word: " word
+paste - - <&0 | cut -f1
