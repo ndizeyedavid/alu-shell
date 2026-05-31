@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Going to use if to check if the number is 4 and print "bad luck" or if 8 to print "good luck" or else "Best School
+
+count=1
+while (( count<=10 )); do
+      if (( count == 4 )); then
+      	 echo "bad luck"
+      elif (( count == 8 )); then
+      	   echo "good luck"
+      else
+	echo "Best School"
+      fi
+
+	(( count++ ))
+done
