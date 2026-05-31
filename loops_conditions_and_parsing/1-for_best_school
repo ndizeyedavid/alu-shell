@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # i used a for loop which iterates 10 times as depicted in this range of [1 -> 10] 
-for i in {1..10}; do
+for ((i=0; i<= 10; i++)) do
     echo "Best School"
 done
