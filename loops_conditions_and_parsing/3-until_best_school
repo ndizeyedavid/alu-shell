@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# I am going to use the "until" loop to iterate "best school" 10 times. Same as while, I am going to initiate the start with a variable and then set the range condition and finally the iterator
+
+count=1
+until [ $count -gt 10 ]
+do
+    echo "Best School"
+    count=$((count + 1))
+done
