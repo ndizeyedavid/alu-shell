@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# I have iterated 10 iterations using while loop and on the 9 iteration I have printed "Best school" and "Hi" on their lines
+
+count=1
+while (( count<=10 )); do
+
+      echo "Best School"
+
+      if (( count == 9 )); then
+	 echo "Hi"
+	fi
+	
+      (( count++ ))
+done
