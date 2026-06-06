@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+# not sure if i get the question clearly, but what I know is that i am going to stack lots of IFs together lol
+
+file=school
+
+if [ -f "$file" ]; then
+    echo "school file exists"
+    if [ -s "$file" ]; then
+	echo "school file is not empty"
+
+	if [ ! -L "$file" ]; then
+	    echo "school is a regular file"
+	fi
+    else
+	echo "school file is empty"
+    fi
+    
+else
+    echo "school file does not exist"
+fi
+
+    

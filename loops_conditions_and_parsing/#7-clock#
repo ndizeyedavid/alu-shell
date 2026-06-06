@@ -1,0 +1,9 @@
+#!/bin/bash
+# In this script I am going to use nested loops to work on the desired output which is something like a clock
+
+hour=0
+while (( hour<=12 )); do
+    echo "Hour: $hour"
+
+    minute=1
+    while ((minute <=
