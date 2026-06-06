@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# i am going to use the for loop to print out a list form of all files in this directory
+
+for file in *; do
+    echo "${file#*-}"
+done
+
