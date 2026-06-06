@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # In this script i am using 2 nested loops to work on that clock task
 
 hour=0
