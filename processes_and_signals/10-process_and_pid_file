@@ -1,32 +1,12 @@
 #!/usr/bin/env bash
 # this script creates a unique PID and saves in this /var/run/myscript.pid and a bunch of SIGNALS are defined to make this thing not die hhh
 
-PIDFILE="/var/run/myscript.pid"
+echo $$ > /var/run/myscript.pid
 
-echo $$ > "$PIDFILE"
-
-cleanup() {
-    rm -f "$PIDFILE"
-    exit 1
-}
-
-on_term() {
-    echo "I hate the kill command"
-}
-
-on_int() {
-    echo "Y U no love me?!"
-}
-
-on_quit() {
-    cleanup
-}
-
-trap on_term SIGTERM
-trap on_int SIGINT
-trap on_quit SIGQUIT
+trap 'echo "Y U no love me?!"' SIGINT
+trap 'echo "I hate the kill command"; rm -f /var/run/myscript.pid; exit' SIGTERM SIGQUIT
 
 while true; do
-    echo "To infinity and beyond"
-    sleep 2
+	echo "To infinity and beyond"
+	sleep 2
 done
