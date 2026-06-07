@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script returns only the username, User Id and homedirectory for the users
+
+while IFS=: read -r username password uid gid comment home shell
+do
+    echo "$username:$uid:$home"
+done < /etc/passwd
