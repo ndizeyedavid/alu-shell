@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# To infinity and beyond..... Hahaha, i like the title of this task. Basically i am going to use an infinite while loop that will be printing that "infinity message" with a delay of 2 seconds
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
