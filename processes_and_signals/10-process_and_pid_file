@@ -18,14 +18,13 @@ on_int() {
     echo "Y U no love me?!"
 }
 
-on_exit_signal() {
+on_quit() {
     cleanup
 }
 
 trap on_term SIGTERM
 trap on_int SIGINT
-trap on_exit_signal SIGQUIT
-trap on_exit_signal SIGTERM
+trap on_quit SIGQUIT
 
 while true; do
     echo "To infinity and beyond"
