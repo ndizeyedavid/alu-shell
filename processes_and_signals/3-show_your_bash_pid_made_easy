@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this script prints out the PID and the name bash for the running bash script
+
+echo "$$ bash"
+echo "$$ bash"
