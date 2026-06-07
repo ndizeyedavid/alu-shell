@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this script forcefully kills the highlander script that has the SIGTERM that makes it not stop upon normal kill
+
+
+pkill -f -9 7-highlander
