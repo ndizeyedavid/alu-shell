@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# ahh, FizzBuzz... my favourite coding challenge
+
+count=1
+
+while (( count <= 100 )); do
+    if (( count % 3 == 0 && count % 5 == 0 )); then
+	echo "FizzBuzz"
+    elif (( count % 3 == 0 )); then	
+	echo "Fizz"
+    elif (( count % 5 == 0 )); then
+	echo "Buzz"
+    else
+	echo "$count"
+    fi
+    
+    (( count++ ))
+done
+
+       
