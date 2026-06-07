@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# I am so sad that we are going to stop "To infinity and beyond loop". I will use the kill command to do so
+
+kill 8613
