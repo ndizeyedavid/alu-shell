@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this script chains grep to all the lines in the processes that have the word "bash" in them to easily get their PID
+# shellcheck disable=SC2009
+
+ps -auxf | grep "bash"
