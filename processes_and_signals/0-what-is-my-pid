@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# starting the shell process and signlaing with printing this script's PID with $$
+
+echo $$
