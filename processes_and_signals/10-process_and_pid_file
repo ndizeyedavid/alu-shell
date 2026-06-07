@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# this script creates a unique PID and saves in this /var/run/myscript.pid and a bunch of SIGNALS are defined to make this thing not die hhh
 
 PIDFILE="/var/run/myscript.pid"
 
