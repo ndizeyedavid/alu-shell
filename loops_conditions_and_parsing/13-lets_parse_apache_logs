@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# finally we are allowed to use awk, and in this script i am using awk to print ip addresses and status codes from an apache log file
+
+awk '{print $1, $9}' apache-access.log
