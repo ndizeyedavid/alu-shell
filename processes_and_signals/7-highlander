@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# this script listens to SIGTERM and triggers a message "I am invincible"
+
+trap 'echo "I am invincible!!!"' SIGTERM
+
+while true; do
+    echo "To infinity and beyond"
+    sleep 2
+done
